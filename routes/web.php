@@ -13,11 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function() {
-    return 'pagina principal posta';
+    return view ('welcome');
 });
 
-Route::get('nota', function(){
+Route::get('/nota', function(){
     return "no mames por que no me sale";
 });
 
     
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
