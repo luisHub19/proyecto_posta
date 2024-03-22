@@ -17,7 +17,7 @@ Route::get('/', function() {
 });
 
 Route::get('/nota', function(){
-    return "no mames por que no me sale";
+    return ;
 });
 
     
