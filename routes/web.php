@@ -9,4 +9,5 @@ Route::get('/secciones/{seccion}', [SeccionController::class, 'seccion']) ->name
 Route::get('/secciones', [SeccionController::class, 'secciones']) ->name ('secciones');
 Route::get('home/nota', [SeccionController::class, 'nota']) ->name ('noticia');
 
- 
+
+Route::get('/api/noticias/scrap', 'ScraperController@scrap');

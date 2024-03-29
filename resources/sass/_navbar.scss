@@ -1,0 +1,46 @@
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 4%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-between;
+    z-index: 100;
+    backdrop-filter: 50px;
+}
+
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar a{
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(7, 7, 7);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    transition: color .2s ease;
+}
+.navbar a:hover {
+    color: rgb(182, 38, 31);
+    text-decoration: underline;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search {
+    border: 1px solid rgb(172, 124, 124);
+    border-radius: 10px;
+    padding:    5px 10px;
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+  }

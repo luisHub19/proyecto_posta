@@ -1,0 +1,42 @@
+.notasmuestra{
+    margin-top: 50;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 80px;
+}
+.imagen{
+    width: 400px;
+    height: 280px;
+    border: 1px solid black;
+    //margin-left: auto;
+}
+.titulomuestra{
+    width: 400px; 
+    height: 40px; 
+    border: 1px solid black;
+    font-family: "Linden Hill", serif;
+    font-size: 25px; 
+    //margin-left: auto; 
+    //margin-right: auto;
+}
+.descmuestra{
+    width: 400px; 
+    height: 130px; 
+    border: 1px solid black;
+    font-family: "Martel", serif;
+    font-size: 14px;
+    //margin-left: auto; 
+    //margin-right: auto;
+}
+.lineamuestra{
+    margin-top: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: red;
+}
+.muestraseccionado{
+    margin-top: 50px;
+    margin-left: 70px;
+}

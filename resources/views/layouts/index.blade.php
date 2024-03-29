@@ -6,9 +6,8 @@
     <title>posta</title>
 </head>
 <body>
+    @include('layouts._partials.nav')
     @yield('content') 
 </body>
-<footer>
-
-</footer>
+    @include('layouts._partials.footer')
 </html>

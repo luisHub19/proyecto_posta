@@ -1,0 +1,21 @@
+.contenido{
+    width: 350px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding: 40px;
+}
+.lomasvisto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contenido li{
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    //font-family: "Martel", serif;
+    //font-family: "Linden Hill", serif;
+    font-size: 20px;
+}
+.contenido ul{
+    list-style: none;
+}

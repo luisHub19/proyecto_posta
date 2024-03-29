@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SeccionController extends Controller
 {
     public function seccion($seccion){
-        return view('notas.seccion', compact('seccion'));
+        return view('seccion', compact('seccion'));
     }
     public function secciones(){
         return view('notas.secciones');

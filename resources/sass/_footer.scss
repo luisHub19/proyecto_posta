@@ -1,0 +1,46 @@
+.footer{
+    justify-content:space-between;
+    background-color: #ffffff;
+}
+.logonav{
+    align-items: center;
+    padding:40px;
+}
+
+
+
+.secciones{
+    padding: 40px;
+}
+.listas a{
+    text-decoration: none;
+    color: black;
+}
+.listas a:hover{
+    color: rgb(182, 38, 31);
+    text-decoration: underline;
+}
+.listas li{
+    padding: 5px;
+}
+
+
+
+.enlaces{
+    padding: 40px;
+}
+.enlaces li{
+    padding: 5px;
+}
+.footer p{
+    align-content: center;
+}
+
+.aviso p{
+    text-align: center;
+}
+.aviso hr{
+    margin-left: 100px;
+    color: red;
+    margin-right: 100px;
+}
