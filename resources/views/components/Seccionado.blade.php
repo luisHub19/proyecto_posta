@@ -11,7 +11,7 @@
             </div>
             <div class="titulonota">
                 {{-- aqui va el titulo de la nota --}}
-                <a href="#">Titulo</a>
+                <a href="{{route('noticia')}}">Titulo</a>
             </div>
         </div>
         <div class="NotaIdividual" >
@@ -20,7 +20,7 @@
             </div>
             <div class="titulonota">
                 {{-- aqui va el titulo de la nota --}}
-                <a href="#">Titulo</a>
+                <a href="{{route('noticia')}}">Titulo</a>
             </div>
         </div>
         <div class="NotaIdividual">
@@ -29,7 +29,7 @@
             </div>
             <div class="titulonota">
                 {{-- aqui va el titulo de la nota --}}
-                <a href="#">Titulo</a>
+                <a href="{{route('noticia')}}">Titulo</a>
             </div>
         </div>
     </div>

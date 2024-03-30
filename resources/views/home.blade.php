@@ -3,7 +3,7 @@
 
 @section('content')
  
-    @component('components.SecDelDia') @endcomponent
+        @component('components.SecDelDia') @endcomponent
 
     {{-- <div style="display: flex;"> --}}
         @component('components.line')@endcomponent

@@ -13,6 +13,6 @@ class SeccionController extends Controller
         return view('notas.secciones');
     }
     public function nota(){
-        return view('notas.nota');
+        return view('nota');
     }
 }

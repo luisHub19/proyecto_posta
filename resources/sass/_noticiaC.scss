@@ -1,0 +1,30 @@
+.noticiaC{
+    margin: 20px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.noticia{
+    //border: 1px solid black;
+    width: 900px;
+    height: 1100px;
+}
+.imagenC{
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+}
+.mas{
+    border: 1px solid black;
+    width: 350px;
+    height: 600px;
+}
+.descripcion{
+    //border: 1px solid black;
+    width: 900px;
+    height: auto;
+    font-family: "Martel", serif;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: justify;
+}

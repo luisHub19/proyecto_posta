@@ -9,26 +9,24 @@
 .imagen{
     width: 400px;
     height: 280px;
-    border: 1px solid black;
-    //margin-left: auto;
+    //border: 1px solid black;
 }
 .titulomuestra{
     width: 400px; 
     height: 40px; 
-    border: 1px solid black;
-    font-family: "Linden Hill", serif;
-    font-size: 25px; 
-    //margin-left: auto; 
-    //margin-right: auto;
+    font-size: 20px;
+}
+.titulomuestra a{
+    text-decoration: none;
+    color: black;
 }
 .descmuestra{
     width: 400px; 
     height: 130px; 
-    border: 1px solid black;
+    //border: 1px solid black;
     font-family: "Martel", serif;
     font-size: 14px;
-    //margin-left: auto; 
-    //margin-right: auto;
+    text-align: justify;
 }
 .lineamuestra{
     margin-top: 150px;
@@ -39,4 +37,5 @@
 .muestraseccionado{
     margin-top: 50px;
     margin-left: 70px;
+    font-family: "Martel", serif;
 }
