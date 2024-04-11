@@ -1,46 +1,110 @@
 .footer{
-    justify-content:space-between;
-    background-color: #ffffff;
+    
+    box-shadow: 0 5px -10px rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //margin-top: 50px;
 }
-.logonav{
-    align-items: center;
-    padding:40px;
+.footer-container{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
 }
-
-
-
-.secciones{
+.vinculos-footer{
+    display: flex;
+}
+.iconos-footer{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.socialmedia-footer{
+    margin-top: 140px;
     padding: 40px;
+    padding-left: 0%;
+    //background-color: brown;
 }
-.listas a{
+.enlaces-footer{
+    width: 200px;
+    //background-color: blue;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.enlaces-footer a:hover {
+    color: rgb(182, 38, 31);
+    text-decoration: underline;
+  }
+.enlaces-footer li{
+    list-style-type: none;
+    padding: 4px;
+}
+.enlaces-footer a{
+    font-family: "Martel", serif;
+    font-size: 12px;
     text-decoration: none;
     color: black;
 }
-.listas a:hover{
+.secciones-footer{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.secciones-footer li{
+    list-style-type: none;
+    padding: 4px;
+}
+.secciones-footer a{
+    font-family: "Martel", serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.secciones-footer a:hover {
     color: rgb(182, 38, 31);
     text-decoration: underline;
+  }
+.bi{
+    color: rgb(219, 63, 55);
+    font-size: 18px;
+    margin: 10px;
 }
-.listas li{
-    padding: 5px;
+.decoration-footer{
+    color: red;
+    margin-left: 80px;
+    margin-right: 80px;
 }
-
-
-
-.enlaces{
-    padding: 40px;
-}
-.enlaces li{
-    padding: 5px;
-}
-.footer p{
-    align-content: center;
-}
-
-.aviso p{
+.copyright{
     text-align: center;
 }
-.aviso hr{
-    margin-left: 100px;
-    color: red;
-    margin-right: 100px;
+@media (max-width: 810px){
+    .footer-container{
+        display: block;
+    }
+    .iconos-footer{
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+    .socialmedia-footer{
+        margin-top: 0px;
+        padding: 10px;
+        padding-left: 0%;
+    }
+    .secciones-footer{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+    .enlaces-footer{
+        width: 200px;
+        //background-color: blue;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    .bi{
+        margin: 5;
+        font-size: 16;
+    }
 }

@@ -1,19 +1,4 @@
-.seccionado{
-    margin-top: 100px;
-}
-.Notas{
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-.foto{
-    border:1px solid black;
-    width: 400px;
-    height: 250px;
-    
-}
+
 .linea{
     margin-left: 70px;
     margin-right: 70px;
@@ -25,7 +10,20 @@
     font-size: 30px;
     color: red;
 }
-.titulonota a{
+
+.seccionado-contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.seccionado-nota{
+}
+.seccionado-imagen{
+    border:1px solid black;
+    width: 400px;
+    height: 250px;
+}
+.seccionado-titulo a{
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -33,4 +31,59 @@
     text-decoration: none;
     font-size: 20px;
     color: rgb(0, 0, 0);
-  }
+}
+@media (max-width: 1240px){
+    .seccionado-imagen{
+        width: 370px;
+        height: 240px;
+    }
+}
+@media (max-width: 1140px){
+    .seccionado-imagen{
+        width: 340px;
+        height: 220px;
+    }
+}
+@media (max-width: 1040px){
+    .seccionado-imagen{
+        width: 310px;
+        height: 210px;
+    }
+}
+@media (max-width: 940px){
+    .seccionado-imagen{
+        width: 280px;
+        height: 190px;
+    }
+}
+@media (max-width: 840px){
+    .seccionado-imagen{
+        width: 260px;
+        height: 170px;
+    }
+}
+@media (max-width: 780px){
+    .seccionado-imagen{
+        width: 230px;
+        height: 150px;
+    }
+}
+@media (max-width: 650px){
+    .seccionado-contenedor{
+        display: block;
+        align-items: center;
+    }
+    .seccionado-imagen{
+        margin: 0 auto;
+        width: 400px;
+        height: 250px;
+    }
+    .seccionado-titulo a{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .seccionado-nota{
+        padding-left: 30px;
+        text-align: center;
+    }
+}

@@ -1,4 +1,4 @@
-.notasmuestra{
+.masreciente-contenedor{
     margin-top: 50;
     display: flex;
     justify-content: space-between;
@@ -6,21 +6,21 @@
     padding-right: 20px;
     margin-bottom: 80px;
 }
-.imagen{
+.masreciente-imagen{
     width: 400px;
     height: 280px;
-    //border: 1px solid black;
+    border: 1px solid black;
 }
-.titulomuestra{
+.masreciente-titulo{
     width: 400px; 
     height: 40px; 
     font-size: 20px;
 }
-.titulomuestra a{
+.masreciente-titulo a{
     text-decoration: none;
     color: black;
 }
-.descmuestra{
+.masreciente-descripcion{
     width: 400px; 
     height: 130px; 
     //border: 1px solid black;
@@ -34,8 +34,141 @@
     margin-right: 120px;
     color: red;
 }
-.muestraseccionado{
-    margin-top: 50px;
-    margin-left: 70px;
-    font-family: "Martel", serif;
+@media (max-width: 1240px){
+    .masreciente-descripcion{
+        width: 370px; 
+        height: 130px;
+    }
+    .masreciente-imagen{
+        width: 370px;
+        height: 270px;
+        border: 1px solid rgb(255, 0, 0);
+    }
+    .masreciente-titulo{
+        width: 370px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+}
+@media (max-width: 1140px){
+    .masreciente-descripcion{
+        width: 340px; 
+        height: 100px;
+        //margin: 10px;
+    }
+    .masreciente-imagen{
+        width: 340px;
+        height: 250px;
+        border: 1px solid rgb(0, 255, 60);
+    }
+    .masreciente-titulo{
+        width: 340px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+    .masreciente-descripcion{ 
+        font-size: 13px;
+    }
+}
+@media (max-width: 1040px){
+    .masreciente-descripcion{
+        width: 310px; 
+        height: 100px;
+        //margin: 10px;
+    }
+    .masreciente-imagen{
+        width: 310px;
+        height: 230px;
+        border: 1px solid rgb(47, 0, 255);
+    }
+    .masreciente-titulo{
+        width: 310px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+    .masreciente-descripcion{ 
+        font-size: 12px;
+    }
+}
+@media (max-width: 940px){
+    .masreciente-descripcion{
+        width: 280px; 
+        height: 100px;
+        //margin: 10px;
+    }
+    .masreciente-imagen{
+        width: 280px;
+        height: 200px;
+        border: 1px solid rgb(47, 0, 255);
+    }
+    .masreciente-titulo{
+        width: 280px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+    .masreciente-descripcion{ 
+        font-size: 11px;
+    }
+}
+@media (max-width: 840px){
+    .masreciente-descripcion{
+        width: 260px; 
+        height: 100px;
+        //margin: 10px;
+    }
+    .masreciente-imagen{
+        width: 260px;
+        height: 160px;
+        border: 1px solid rgb(47, 0, 255);
+    }
+    .masreciente-titulo{
+        width: 280px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+    .masreciente-descripcion{ 
+        font-size: 10px;
+    }
+}
+@media (max-width: 780px){
+    .masreciente-contenedor{
+        display: block;
+    }
+    .masreciente-descripcion{
+        width: 230px; 
+        height: 100px;
+        //margin: 10px;
+    }
+    .masreciente-imagen{
+        width: 400px;
+        height: 160px;
+        border: 1px solid rgb(21, 197, 53);
+    }
+    .masreciente-titulo{
+        width: 230px; 
+        height: 40px; 
+        font-size: 20px;
+    }
+    .masreciente-individual{
+        display: flex;
+        margin-top: 50px;
+    }
+    .masreciente-descripcion{ 
+        font-size: 10px;
+        width: 350px;
+    }
+    .masreciente-texto{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 650px){
+    .masreciente-individual{
+        display: block;
+    }
+    .masreciente-imagen{
+        height: 270px;
+    }
+    .masreciente-individual{
+        padding-left: 30px;
+    }
 }

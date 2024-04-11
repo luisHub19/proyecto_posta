@@ -1,28 +1,30 @@
 @vite(['resources/sass/_secdeldia.scss'])
-<div class="secdeldia" style="display: flex">
-    <div>
-        <div class="principal">
+<div class="secdeldia">
+    <div class="Nota-principal">
+        <div class="foto-principal">
             {{-- imagen --}}
         </div>
-        <div class="titulo">
-            {{-- <h3>titulo</h3> --}}
-        </div>
+        <h3 class="Titulo-principal">
+            titulo bien chingon
+        </h3>
     </div>
-    <div>
+    <div class="par-principal">
         <div>
-            <div class="secundario">
+            <div class="foto-secundaria">
 
             </div>
-            <div class="titulo">
+            <div class="Titulo-secundario">
                 {{-- <h3>titulo</h3> --}}
+                tituollll no me digas que aqui tambien mamo
             </div>
         </div>
         <div>
-            <div class="secundario">
+            <div class="foto-secundaria">
 
             </div>
-            <div class="titulo">
+            <div class="Titulo-secundario">
                 {{-- <h3>titulo</h3> --}}
+                que pedo con esto por que no jala
             </div>
         </div>
     </div>

@@ -4,32 +4,29 @@
         <p class="tituloseccion">Seccion</p>
         <hr class="linea">
     </div>
-    <div class="Notas" style="display: flex">
-        <div class="NotaIdividual">
-            <div class="foto">
-                {{-- aqui va una foto --}}
+    <div class="seccionado-contenedor">
+        <div class="seccionado-nota">
+            <div class="seccionado-imagen">
+
             </div>
-            <div class="titulonota">
-                {{-- aqui va el titulo de la nota --}}
-                <a href="{{route('noticia')}}">Titulo</a>
-            </div>
-        </div>
-        <div class="NotaIdividual" >
-            <div class="foto">
-            {{-- aqui va una foto --}}
-            </div>
-            <div class="titulonota">
-                {{-- aqui va el titulo de la nota --}}
-                <a href="{{route('noticia')}}">Titulo</a>
+            <div class="seccionado-titulo">
+                <a href="">Titulo</a>
             </div>
         </div>
-        <div class="NotaIdividual">
-            <div class="foto">
-                {{-- aqui va una foto --}}
+        <div class="seccionado-nota">
+            <div class="seccionado-imagen">
+
             </div>
-            <div class="titulonota">
-                {{-- aqui va el titulo de la nota --}}
-                <a href="{{route('noticia')}}">Titulo</a>
+            <div class="seccionado-titulo">
+                <a href="">Titulo</a>
+            </div>
+        </div>
+        <div class="seccionado-nota">
+            <div class="seccionado-imagen">
+
+            </div>
+            <div class="seccionado-titulo">
+                <a href="">Titulo</a>
             </div>
         </div>
     </div>

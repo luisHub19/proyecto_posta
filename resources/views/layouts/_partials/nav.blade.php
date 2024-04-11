@@ -1,5 +1,4 @@
 @vite(['resources/sass/_navbar.scss'])
-<body>
     <header class="header">
         <a class="logo" href="{{route('home')}}">
             <svg width="124" height="48" viewBox="0 0 124 48" fill="none">
@@ -20,4 +19,3 @@
         </nav>
         <input class="search" type="text">         
     </header>
-</body>

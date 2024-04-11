@@ -2,21 +2,117 @@
     padding-top: 100px;
     justify-content: space-between;
     margin: 20px;
+    display: flex;
 }
-.principal{
+.foto-principal{
     border:1px solid black;
     width: 800px;
     height: 420px;
 }
-.secundario{
+.foto-secundaria{
     border:1px solid black;
     width: 450px;
     height: 200px;
 }
-.titulo{
-    
-    width: 10px;
+.Titulo-secundario{
+    width: 400px;
     height: 20px;
 }
- 
-  
+@media (max-width: 1290px) {
+    .secdeldia{
+        display: block;
+    }
+    .foto-principal{
+        width: 80rem;
+        height: 40rem;
+        margin: 0 auto;
+    }
+    .Titulo-principal{
+        width: 80rem;
+        margin: 0 auto;
+    }
+    
+    .par-principal{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .foto-secundaria{
+        border:1px solid black;
+        width: 490px;
+        height: 290px;
+    }
+    .Titulo-secundario{
+        width: 400px;
+        height: 20px;
+    }
+  }
+@media (max-width: 1030px) {
+    .foto-principal{
+        width: 70rem;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .Titulo-principal{
+        width: 70rem;
+        margin: 0 auto;
+    }
+    .foto-secundaria{
+        border:1px solid black;
+        width: 400px;
+        height: 200px;
+    }
+    
+}
+@media (max-width: 830px) {
+    .foto-principal{
+        width: 50rem;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .Titulo-principal{
+        width: 50rem;
+        margin: 0 auto;
+    }
+    .foto-secundaria{
+        border:1px solid black;
+        width: 550px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    .par-principal{
+        display: block;
+        
+    }
+    .Titulo-secundario{
+        width: 550px;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 600px) {
+    .secdeldia{
+        padding-top: 200px;
+    }
+    .foto-principal{
+        width: 460px;
+        height: 260px;
+        margin: 0 auto;
+    }
+    .Titulo-principal{
+        width: 460px;
+        //margin: 0 auto;
+        text-align: center;
+    }
+    .foto-secundaria{
+        border:1px solid black;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .Titulo-secundario{
+        width: 400px;
+        text-align: center;
+    }
+    
+}
