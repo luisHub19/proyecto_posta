@@ -15,6 +15,6 @@ class Noticia extends Model
     // Relación con categorías
     public function categorias()
     {
-        return $this->belongsToMany(Categoria::class, 'noticias_categorias', 'noticia_id', 'categoria_id');
+        return $this->belongsToMany(Categoria::class, 'categoria_has_noticia', 'noticia_idnoticia', 'categoria_idcategoria');
     }
 }

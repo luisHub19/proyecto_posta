@@ -17,7 +17,7 @@ class NoticiaController extends Controller
             'pie_de_imagen' => 'nullable|string|max:45',
             'descripcion' => 'nullable|string',
             'autor' => 'required|string|max:45',
-            'region_idregion' => 'required|integer',
+            //'region_idregion' => 'required|integer',
            // 'usuarios_idusuarios' => 'required|integer',
         ]);
 
@@ -28,7 +28,7 @@ class NoticiaController extends Controller
         $noticia->pie_de_imagen = $request->pie_de_imagen;
         $noticia->descripcion = $request->descripcion;
         $noticia->autor = $request->autor;
-        $noticia->region_idregion = $request->region_idregion;
+        //$noticia->region_idregion = $request->region_idregion;
         //$noticia->usuarios_idusuarios = $request->usuarios_idusuarios;
         $noticia->save();
         $noticia->categorias()->attach($request->categorias);
