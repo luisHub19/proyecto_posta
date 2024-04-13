@@ -26,6 +26,10 @@
     text-decoration: none;
     color: black;
 }
+.Vinculos-MasVistos ul :hover {
+    color: rgb(182, 38, 31);
+    text-decoration: underline;
+}
 .Notas-MasVistos{
     margin-left: 50px;
     background-color:aliceblue;

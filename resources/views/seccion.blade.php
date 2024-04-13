@@ -3,7 +3,7 @@
 
 
 @section('content')
-    @component('components.line')@endcomponent
+    {{-- @component('components.line')@endcomponent --}}
     @component('components.NotaMue')@endcomponent
     @component('components.NotaMue')@endcomponent
     @component('components.NotaMue')@endcomponent

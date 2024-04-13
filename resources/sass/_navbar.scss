@@ -1,47 +1,82 @@
 
-.header{
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 4%;
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content:space-between;
-    z-index: 100;
-    backdrop-filter: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.navbar{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.logo{
-    font-size: 2rem;
-    text-decoration: none;
+.logo-navbar{
+    //background-color: aquamarine;
+    padding: 10px;
 }
-
-.navbar a{
-    margin-left: 2rem;
-    text-decoration: none;
-    font-weight: 500;
-    color: rgb(7, 7, 7);
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    transition: color .2s ease;
+.navegacion-navbar{
+ //background-color: rgb(173, 104, 238);
+    padding: 10px;
+    text-align: center;
 }
-.navbar a:hover {
+.socialmedia-navbar{
     color: rgb(182, 38, 31);
+    margin-bottom: 10px;
+}
+.bi-nav{
+    margin-left: 15px;
+    
+}
+.etiquetas-navbar{
+    //background-color: rgb(255, 255, 134);
+    padding: 10px;
+}
+.etiquetas-navbar a{
+    margin: 10px;
+    text-decoration: none;
+    color:black;
+}
+.etiquetas-navbar :hover{
+    color: rgb(191, 89, 89);
     text-decoration: underline;
-  }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+.searchbar{
+    //background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    cursor: pointer;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{
+    display: none;
+}
+.open-menu, .close-menu{
+    display: none;
 }
 
-.search {
-    border: 1px solid rgb(172, 124, 124);
-    border-radius: 10px;
-    padding:    5px 10px;
-    width: 150px;
-    height: 30px;
-    margin-top: 5px;
-  }
+@media(max-width: 1000px){
+    .navegacion-navbar{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(255, 228, 228);
+    }
+    .etiquetas-navbar{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .navegacion-navbar{right: 0;}
+    .searchbar{
+        display: none;
+    }
+}
