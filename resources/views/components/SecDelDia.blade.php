@@ -5,7 +5,7 @@
             {{-- imagen --}}
         </div>
         <h3 class="Titulo-principal">
-            titulo bien chingon
+            <a href="{{route('noticia')}}">Titulo</a>
         </h3>
     </div>
     <div class="par-principal">
@@ -14,8 +14,7 @@
 
             </div>
             <div class="Titulo-secundario">
-                {{-- <h3>titulo</h3> --}}
-                tituollll no me digas que aqui tambien mamo
+                <a href="{{route('noticia')}}">Titulo</a>
             </div>
         </div>
         <div>
@@ -23,8 +22,7 @@
 
             </div>
             <div class="Titulo-secundario">
-                {{-- <h3>titulo</h3> --}}
-                que pedo con esto por que no jala
+                <a href="{{route('noticia')}}">Titulo</a>
             </div>
         </div>
     </div>
