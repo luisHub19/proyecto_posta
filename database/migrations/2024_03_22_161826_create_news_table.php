@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('noticia', function (Blueprint $table) {
             $table->id('idnoticia');
             $table->string('titulo', 45)->nullable();
-            $table->string('subtitulo', 45)->nullable();
+            $table->string('pie_de_imagen', 45)->nullable();
             $table->date('fecha')->nullable();
             $table->string('descripcion', 45)->nullable();
-            $table->integer('clicks')->nullable();
             $table->string('autor', 45)->nullable();
             $table->string('imagen', 45)->nullable();
             $table->unsignedBigInteger('region_idregion');
