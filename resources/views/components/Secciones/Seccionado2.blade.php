@@ -5,7 +5,7 @@
         <hr class="linea">
     </div>
     @php
-    $notasSlice = $notas->slice(3);
+    $notasSlice = $notas->slice(6);
     @endphp
     <div class="seccionado-contenedor">
     @foreach ($notasSlice->take(3) as $notas)
@@ -14,7 +14,7 @@
                 <img src="{{ $notas->imagen }}" alt="">
             </div>
             <div class="seccionado-titulo">
-                <a href="{{route('noticia')}}">{{ $notas->titulo }}</a>
+                <a href="/home/{{ $notas->idnoticia }}">{{ $notas->titulo }}</a>
             </div>
         </div>
     @endforeach

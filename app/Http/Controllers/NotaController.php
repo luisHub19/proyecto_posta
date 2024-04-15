@@ -8,11 +8,11 @@ use App\Models\Nota;
 
 class NotaController extends Controller
 {
-    public function mostrarNoticiaNoticiaC()
+    public function mostrarNoticiaNoticiaC($idnoticia)
     {
         // Recuperar todas las categorías desde la base de datos
-         $notas = Nota::all(); // Cambio en el nombre de la variable
-         $notasSlice = $notas->slice(1);
+         $notas = Nota::find($idnoticia); // Cambio en el nombre de la variable
+        // $notasSlice = $notas->slice(1);
         // Pasar las categorías a la vista
         return view('nota', ['notas' => $notas]); // Cambio en el nombre de la variable
     }

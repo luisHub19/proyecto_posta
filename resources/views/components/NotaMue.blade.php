@@ -13,7 +13,7 @@
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
-                <a href="{{ $notas->titulo }}">{{ $notas->titulo }}</a>
+                <a href="/home/{{ $notas->idnoticia }}">{{ $notas->titulo }}</a>
             </div>
             <div class="masreciente-descripcion">
                 <p>{{ $notas->descripcion }}</p>

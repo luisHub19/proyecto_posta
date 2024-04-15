@@ -7,7 +7,7 @@
         <div class="descripcion">
             <h2>{{ $notas->titulo }}</h2>
             <p>{{ $notas->descripcion }}</p>
-            <p>{{ $nota->autor }}</p>
+            <p>{{ $notas->autor }}</p>
         </div>
     </div>
     <div class="mas">

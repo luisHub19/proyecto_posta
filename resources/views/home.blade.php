@@ -11,7 +11,22 @@ $notas = App\Models\Noticia::orderBy('created_at', 'desc')->take(3)->get();
         @endcomponent
     </div>
     <div>
-        @component('components.Seccionado', ['notas' => $notas])@endcomponent
+        @component('components.Secciones.Seccionado', ['notas' => $notas])@endcomponent
+    </div>
+    <div>
+        @component('components.Secciones.Seccionado2', ['notas' => $notas])@endcomponent
+    </div>
+    <div>
+        @component('components.Secciones.Seccionado3', ['notas' => $notas])@endcomponent
+    </div>
+    <div>
+        @component('components.Secciones.Seccionado4', ['notas' => $notas])@endcomponent
+    </div>
+    <div>
+        @component('components.Secciones.Seccionado5', ['notas' => $notas])@endcomponent
+    </div>
+    <div>
+        @component('components.Secciones.Seccionado6', ['notas' => $notas])@endcomponent
     </div>
 
 
