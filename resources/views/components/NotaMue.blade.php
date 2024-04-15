@@ -6,46 +6,19 @@
         Lo mas reciente en Durango
     </h1>
 </div>
-<div class="masreciente-contenedor">
+@foreach ($notas->take(3) as $notas)
     <div class="masreciente-individual">
         <div class="masreciente-imagen">
             <p>imagen</p>
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
-                <a href="{{ $notas->titulo }}">Titulo</a>
+                <a href="{{ $notas->titulo }}">{{ $notas->titulo }}</a>
             </div>
             <div class="masreciente-descripcion">
                 <p>{{ $notas->descripcion }}</p>
             </div>
         </div>
     </div>
-
-    <div class="masreciente-individual">
-        <div class="masreciente-imagen">
-            <p>imagen</p>
-        </div>
-        <div class="masreciente-texto">
-            <div class="masreciente-titulo">
-                <a href="{{$notas->imagen}}">Titulo</a>
-            </div>
-            <div class="masreciente-descripcion">
-                <p>{{ $notas->descripcion }}</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="masreciente-individual">
-        <div class="masreciente-imagen">
-            <p>imagen</p>
-        </div>
-        <div class="masreciente-texto">
-            <div class="masreciente-titulo">
-                <a href="{{$notas->imagen}}">Titulo</a>
-            </div>
-            <div class="masreciente-descripcion">
-                <p>{{ $notas->descripcion }}</p>
-            </div>
-        </div>
-    </div>
+@endforeach
 </div>

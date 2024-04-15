@@ -11,7 +11,7 @@ class NotaController extends Controller
     public function mostrarNoticiaNoticiaC()
     {
         // Recuperar todas las categorías desde la base de datos
-         $notas = Nota::first(); // Cambio en el nombre de la variable
+         $notas = Nota::all(); // Cambio en el nombre de la variable
          $notasSlice = $notas->slice(1);
         // Pasar las categorías a la vista
         return view('nota', ['notas' => $notas]); // Cambio en el nombre de la variable
@@ -25,11 +25,14 @@ class NotaController extends Controller
     return view('home', ['notas' => $notas]);
 }
 
+
+
     public function mostrarNoticiamue()
     {
+        $notas = App\Models\Noticia::orderBy('created_at', 'desc')->take(3)->get();
         // Recuperar todas las categorías desde la base de datos
-         $notas = Nota::first(); // Cambio en el nombre de la variable
-
+         //$notas = Nota::all(); // Cambio en el nombre de la variable
+         
         // Pasar las categorías a la vista
         return view('nota', ['notas' => $notas]); // Cambio en el nombre de la variable
     }
