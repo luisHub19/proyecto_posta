@@ -1,0 +1,78 @@
+.LoMasVisto{
+    //background-color: antiquewhite;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.Notas-MasVistos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.LoMasVisto-container{
+    display: flex;
+}
+.Vinculos-MasVistos{
+    padding-top: 20px;
+    //background-color: azure;
+    margin-left: 50px;
+    padding-right: 50px;
+}
+.Vinculos-MasVistos li{
+    list-style: none;
+    margin-top: 10px;
+}
+.Vinculos-MasVistos a{
+    font-family: "Linden Hill", serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.Vinculos-MasVistos ul :hover {
+    color: rgb(182, 38, 31);
+    text-decoration: underline;
+}
+.Notas-MasVistos{
+    margin-left: 50px;
+    //background-color:aliceblue;
+}
+.Individual-MasVistos{
+    width: 350px;
+    margin-left:100px;
+    margin-top: 20px;
+}
+.Titulo-MasVistos a{
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+.Descripcion-MasVistos{
+    font-family: "Martel", serif;
+    font-size: 12px;
+}
+@media (max-width: 1225px){
+    .Vinculos-MasVistos ul{
+        display: flex;
+        justify-content: center;
+    }
+    .LoMasVisto-container{
+        display: block;
+    }
+    .Vinculos-MasVistos a{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1000px){
+    .Notas-MasVistos{
+        display: block;
+    }
+    .LoMasVisto-container{
+        display: flex;
+        justify-content: center;
+    }
+    .Vinculos-MasVistos ul{
+        display: block;
+    }
+    .Individual-MasVistos{
+        margin-left: 40px;
+    }
+}
