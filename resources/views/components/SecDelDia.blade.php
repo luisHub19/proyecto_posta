@@ -2,32 +2,29 @@
 <div class="secdeldia">
     <div class="Nota-principal">
         <div class="foto-principal">
-        {{ $notas->imagen }}
+        <img src="{{ $notas->first()->imagen }}" alt="">
         </div>
         <h3 class="Titulo-principal">
-            <a href="{{route('nota')}}">{{ $notas->titulo }}</a>
+            <a href="/home/{{ $notas->first()->idnoticia }}">{{ $notas->first()->titulo }}</a>
         </h3>
     </div>
     <div class="par-principal">
-        <div>
-            <div class="foto-secundaria">
+       @php
+    $notasSlice = $notas->slice(1);
+@endphp
 
-            </div>
-            <div class="Titulo-secundario">
-                <a href="{{route('nota')}}">{{ $notas->titulo }}</a>
-            </div>
+@foreach ($notasSlice->take(2) as $notas)
+    <div>
+        <div class="foto-secundaria">
+        <img src="{{ $notas->imagen }}" alt="">
         </div>
-        <div>
-            <div class="foto-secundaria">
-
-            </div>
-            <div class="Titulo-secundario">
-                <a href="{{route('nota')}}">{{ $notas->titulo }}</a>
-            </div>
+        <div class="Titulo-secundario">
+            <a href="/home/{{ $notas->idnoticia }}">{{ $notas->titulo }}</a>
         </div>
     </div>
-</div>
 
+</div>
+@endforeach
 
 
 

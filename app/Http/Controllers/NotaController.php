@@ -12,18 +12,18 @@ class NotaController extends Controller
     {
         // Recuperar todas las categorías desde la base de datos
          $notas = Nota::first(); // Cambio en el nombre de la variable
-
+         $notasSlice = $notas->slice(1);
         // Pasar las categorías a la vista
         return view('nota', ['notas' => $notas]); // Cambio en el nombre de la variable
     }
     public function mostrarNoticiahome()
-    {
-        // Recuperar todas las categorías desde la base de datos
-         $notas = Nota::first(); // Cambio en el nombre de la variable
+{
+    // Recuperar todas las notas desde la base de datos
+    $notas = Nota::get();
 
-        // Pasar las categorías a la vista
-        return view('home', ['notas' => $notas]); // Cambio en el nombre de la variable
-    }
+    // Pasar las notas a la vista
+    return view('home', ['notas' => $notas]);
+}
 
     public function mostrarNoticiamue()
     {

@@ -18,9 +18,9 @@ Route::get('/secciones', [SeccionController::class, 'secciones']) ->name ('secci
 Route::get('home/nota', [SeccionController::class, 'nota']) ->name ('noticia');
 Route::get('/news', [newsController::class, 'index']) ->name ('news');
 Route::get('/update', [CategoriaController::class, 'mostrarFormularioUpdate'])->name('update');
-Route::get('/nota', [App\Http\Controllers\NotaController::class, 'mostrarNoticiaNoticiaC'])->name('nota');
+Route::get('/home', [ 'mostrarNoticiaNoticiaC()'])->name('home');
 Route::get('/home', [App\Http\Controllers\NotaController::class, 'mostrarNoticiahome'])->name('home');
-Route::get('home/nota', [App\Http\Controllers\NotaController::class, 'mostrarNoticiaNoticiaC'])->name('nota');
+Route::get('/nota', [App\Http\Controllers\NotaController::class, 'mostrarNoticiaNoticiaC'])->name('nota');
 //Route::get('home/nota', [App\Http\Controllers\NotaController::class, 'mostrarNoticiaNoticiaC'])->name('nota');
 
 Route::post('/update', [App\Http\Controllers\NoticiaController::class, 'guardar'])->name('update');
