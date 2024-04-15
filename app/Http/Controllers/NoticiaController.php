@@ -35,4 +35,10 @@ class NoticiaController extends Controller
         // Redireccionar a alguna vista o página
         return redirect()->route('home');
     }
+    
+    public function obtenerNoticias()
+    {
+        $noticias = Noticia::all();
+        return response()->json($noticias);
+    }
 }

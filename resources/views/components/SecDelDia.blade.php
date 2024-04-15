@@ -2,10 +2,10 @@
 <div class="secdeldia">
     <div class="Nota-principal">
         <div class="foto-principal">
-            {{-- imagen --}}
+        <img :src="noticia.imagen" alt="Noticia del día">
         </div>
         <h3 class="Titulo-principal">
-            <a href="{{route('noticia')}}">Titulo</a>
+            <a :href="'/noticia/' + noticia.idnoticia">{{ noticia.titulo }}</a>
         </h3>
     </div>
     <div class="par-principal">
@@ -14,7 +14,7 @@
 
             </div>
             <div class="Titulo-secundario">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a :href="'/noticia/' + noticia.idnoticia">{{ noticia.titulo }}</a>
             </div>
         </div>
         <div>
@@ -22,7 +22,7 @@
 
             </div>
             <div class="Titulo-secundario">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a :href="'/noticia/' + noticia.idnoticia">{{ noticia.titulo }}</a>
             </div>
         </div>
     </div>
@@ -43,3 +43,20 @@
         </h3>
     </div>
 </div>   --}}
+
+<script>
+import mostrarNoticias from 'resources/js/newsAPI.js';
+
+export default {
+  data() {
+    return {
+      noticias: []
+    };
+  },
+  mounted() {
+    mostrarNoticias((data) => {
+      this.noticias = data;
+    });
+  }
+};
+</script>
