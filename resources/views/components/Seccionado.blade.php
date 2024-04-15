@@ -10,7 +10,7 @@
 
             </div>
             <div class="seccionado-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{route('noticia')}}">{{ $notas->titulo }}</a>
             </div>
         </div>
         <div class="seccionado-nota">
@@ -18,7 +18,7 @@
 
             </div>
             <div class="seccionado-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{route('noticia')}}">{{ $notas->titulo }}</a>
             </div>
         </div>
         <div class="seccionado-nota">
@@ -26,7 +26,7 @@
 
             </div>
             <div class="seccionado-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{route('noticia')}}">{{ $notas->titulo }}</a>
             </div>
         </div>
     </div>

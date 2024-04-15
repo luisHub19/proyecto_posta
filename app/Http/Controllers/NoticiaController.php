@@ -41,4 +41,17 @@ class NoticiaController extends Controller
         $noticias = Noticia::all();
         return response()->json($noticias);
     }
+    
+    public function mostrarNoticias()
+{
+    // Obtener todas las noticias de la base de datos
+    $noticias = Noticia::all();
+
+    // Retornar la vista o página con las noticias
+    return view('noticias', compact('noticias'));
+}
+
+
+    
+
 }

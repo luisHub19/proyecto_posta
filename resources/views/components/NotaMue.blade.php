@@ -13,10 +13,10 @@
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{ $notas->titulo }}">Titulo</a>
             </div>
             <div class="masreciente-descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia, repellendus reprehenderit cupiditate a tempore eos perspiciatis debitis! Iure tenetur animi ipsam debitis praesentium ut rerum, dolores dignissimos provident magni.</p>
+                <p>{{ $notas->descripcion }}</p>
             </div>
         </div>
     </div>
@@ -27,10 +27,10 @@
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{$notas->imagen}}">Titulo</a>
             </div>
             <div class="masreciente-descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia, repellendus reprehenderit cupiditate a tempore eos perspiciatis debitis! Iure tenetur animi ipsam debitis praesentium ut rerum, dolores dignissimos provident magni.</p>
+                <p>{{ $notas->descripcion }}</p>
             </div>
         </div>
     </div>
@@ -41,10 +41,10 @@
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
-                <a href="{{route('noticia')}}">Titulo</a>
+                <a href="{{$notas->imagen}}">Titulo</a>
             </div>
             <div class="masreciente-descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia, repellendus reprehenderit cupiditate a tempore eos perspiciatis debitis! Iure tenetur animi ipsam debitis praesentium ut rerum, dolores dignissimos provident magni.</p>
+                <p>{{ $notas->descripcion }}</p>
             </div>
         </div>
     </div>
