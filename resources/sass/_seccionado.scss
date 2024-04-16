@@ -1,4 +1,4 @@
-
+ 
 .linea{
     margin-left: 70px;
     margin-right: 70px;
@@ -14,13 +14,18 @@
     display: flex;
     justify-content: space-between;
     margin: 20px;
-}
-.seccionado-nota{
-}
+}   
 .seccionado-imagen{
     border:1px solid black;
     width: 400px;
     height: 250px;
+}
+.seccionado-imagen img{
+    width: 100%;
+    height: 100%;
+}
+.seccionado-titulo{
+    max-width: 400px;
 }
 .seccionado-titulo a{
     display: flex;

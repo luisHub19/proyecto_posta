@@ -28,6 +28,6 @@ $notas = App\Models\Noticia::orderBy('created_at', 'desc')->take(3)->get();
     <div>
         @component('components.Secciones.Seccionado6', ['notas' => $notas])@endcomponent
     </div>
-
+</div>
 
 @endsection

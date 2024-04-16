@@ -6,13 +6,18 @@
         Lo mas reciente en Durango
     </h1>
 </div>
+
+<div class="masreciente-contenedor">
 @foreach ($notas->take(3) as $notas)
     <div class="masreciente-individual">
         <div class="masreciente-imagen">
-            <p>imagen</p>
+            <img src="{{ $notas->imagen }}">
         </div>
         <div class="masreciente-texto">
             <div class="masreciente-titulo">
+
+                <a href="{{ $notas->titulo }}">{{ $notas->titulo }}</a>
+
                 <a href="/home/{{ $notas->idnoticia }}">{{ $notas->titulo }}</a>
             </div>
             <div class="masreciente-descripcion">

@@ -10,7 +10,4 @@
             <p>{{ $notas->autor }}</p>
         </div>
     </div>
-    <div class="mas">
-        <!-- Aquí puedes agregar contenido adicional si es necesario -->
-    </div>
 </div>
